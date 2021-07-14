@@ -1,19 +1,13 @@
 <?php
 
 use Illuminate\Support\Facades\Blade;
-use Illuminate\Support\Str;
 
 Blade::directive('isuser', function ($expression) {
-    if (Str::contains($expression, '|')) {
-        $expression = cjlbdMultipleArgs($expression);
-
-        return implode('', [
-            '<?php if(!is_null(auth()->user())): ?>',
-            "<?php echo {$expression->get(0)}; ?>",
-            '<?php else: ?>',
-            "<?php echo {$expression->get(1)}; ?>",
-            '<?php endif; ?>',
-        ]);
+    if ('' !== $expression) {
+        $expression = cjlbdStripQuotes($expression);
+        if (!is_null(auth()->user())) {
+            return $expression;
+        }
     }
 
     return '<?php if(!is_null(auth()->user())): ?>';

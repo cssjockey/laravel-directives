@@ -4,6 +4,9 @@ use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Str;
 
 Blade::directive('isnull', function ($expression) {
+    if($expression === ''){
+        return '';
+    }
     if (Str::contains($expression, '|')) {
         $expression = cjlbdMultipleArgs($expression);
 
