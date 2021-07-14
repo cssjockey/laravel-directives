@@ -57,7 +57,7 @@ Output: {"child":"child value","child2":{"key":"child2 key value"}}
 ```
 This will return JSON string as the values is array.
 
-### @code
+### @code | @code ... @endcode
 Renders the content in `<pre>` tag.
 
 __example of inline code __
