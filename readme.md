@@ -22,7 +22,7 @@ __Optional:__ The service provider will automatically get registered. Or you may
 ```
 ## Usage
 
-#### @arraydata
+### @arraydata
 Renders the value of an array and supports array dot notation.
 ```php
 @arraydata($array|$variable)
@@ -57,7 +57,7 @@ Output: {"child":"child value","child2":{"key":"child2 key value"}}
 ```
 This will return JSON string as the values is array.
 
-#### @code
+### @code
 Renders the content in `<pre>` tag.
 
 __example of inline code __
