@@ -1,6 +1,6 @@
 {
   "name": "cssjockey/laravel-directives",
-  "description": "A collection of useful laravel blade directives.",
+  "description": "This package provides a collection of useful laravel blade directives.",
   "license": "MIT",
   "authors": [
     {
