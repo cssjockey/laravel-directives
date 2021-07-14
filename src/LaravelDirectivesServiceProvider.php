@@ -15,6 +15,7 @@ class LaravelDirectivesServiceProvider extends ServiceProvider
         $this->bootDirectives();
     }
 
+
     /**
      * Register any package services.
      */
