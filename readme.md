@@ -27,7 +27,7 @@ Renders the value of an array and supports array dot notation.
 ```php
 @arraydata($array|$variable)
 ```
-example with simple array:
+__example with simple array:__
 ```php
 @arraydata(['key1' => 'value1', 'key2' => 'value2']|'key1')
 
@@ -39,7 +39,7 @@ Output: value1
 Output: value2
 ```
 
-example with multi-dimensional array:
+__example with multi-dimensional array:__
 ```php
 $data = [
     'parent' => [
@@ -60,14 +60,14 @@ This will return JSON string as the values is array.
 #### @code
 Renders the content in `<pre>` tag.
 
-example of inline code 
+__example of inline code __
 ```php
 @code('<div>Hello world</div>')
 
 Output: <div>hello world</div>
 ```
 
-example with multi-line code block
+__example with multi-line code block__
 ```php
 @code
 <div>
