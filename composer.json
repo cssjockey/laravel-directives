@@ -1,0 +1,47 @@
+{
+  "name": "cssjockey/laravel-directives",
+  "description": "A collection of useful laravel blade directives.",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Mohit Aneja",
+      "email": "mohit@cssjockey.com",
+      "homepage": "https://cssjockey.com"
+    }
+  ],
+  "homepage": "https://github.com/cssjockey/laravel-directives",
+  "keywords": [
+    "Laravel",
+    "LaravelDirectives"
+  ],
+  "require": {
+    "illuminate/support": "~7|~8"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~9.0",
+    "orchestra/testbench": "~5|~6"
+  },
+  "autoload": {
+    "files": [
+      "src/Support/helpers.php"
+    ],
+    "psr-4": {
+      "CSSJockey\\LaravelDirectives\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "CSSJockey\\LaravelDirectives\\Tests\\": "tests"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "CSSJockey\\LaravelDirectives\\LaravelDirectivesServiceProvider"
+      ],
+      "aliases": {
+        "LaravelDirectives": "CSSJockey\\LaravelDirectives\\Facades\\LaravelDirectives"
+      }
+    }
+  }
+}
