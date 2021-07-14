@@ -11,8 +11,9 @@
   ],
   "homepage": "https://github.com/cssjockey/laravel-directives",
   "keywords": [
-    "Laravel",
-    "LaravelDirectives"
+    "laravel",
+    "directives",
+    "blade"
   ],
   "require": {
     "illuminate/support": "~7|~8"
